@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <section class="header-section">
+      <div class="container">
+        <header class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Bproo logo"></a>
+            </div>
+            <nav >
+                <ul id="menuItems">
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="produits-details.html">A propos</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="authentification.html">Comptes</a></li>
+                </ul>
+                <a href="panier.html"><img src="images/cart.png" alt="cart icon" width="26px"></a>
+                <img src="images/menu.png" alt="menu" width="26px" class="menu-icon" onclick="toogleButton()">
+            </nav>
+        </header>
+      </div>
+  </section>
+  
+   <!--meilleurs produits-->
+   <section class="featured-products">
+    <div class="container">
+        <div class="row row-2">
+            <h2 class="titre-produits">Tout nos produits</h2>
+            <select class="filtre-produits">
+                <option value="">Filtre par defaut</option>
+                <option value="">Filtre par prix</option>
+                <option value="">Filtre par vente</option>
+                <option value="">Filtre par popularité</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg" alt="produit 1">
+                <h3>T-shirt</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star" aria-hidden="true"></i>
+                    <i class="bi bi-star"></i> 
+                </div>
+                <p>5000 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" alt="produit 1">
+                <h3>Sneakers</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <p>3500 fcfa</p>
+            </div>
+            <div class="col-4">
+                <a href="produits-details.html"><img src="images/product-3.jpg" alt="produit 1"></a>
+                <h3>Jeans</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-half" aria-hidden="true"></i>
+                </div>
+                <p>4250 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="produit 1">
+                <h3>Polo</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-half" aria-hidden="true"></i>
+                    <i class="bi bi-star"></i> 
+                </div>
+                <p>5050 fcfa</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg" alt="produit 1">
+                <h3>T-shirt</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star" aria-hidden="true"></i>
+                    <i class="bi bi-star"></i> 
+                </div>
+                <p>5000 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg" alt="produit 1">
+                <h3>Sneakers</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <p>3500 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg" alt="produit 1">
+                <h3>Jeans</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-half" aria-hidden="true"></i>
+                </div>
+                <p>4250 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg" alt="produit 1">
+                <h3>Polo</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-half" aria-hidden="true"></i>
+                    <i class="bi bi-star"></i> 
+                </div>
+                <p>5050 fcfa</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg" alt="produit 1">
+                <h3>T-shirt</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star" aria-hidden="true"></i>
+                    <i class="bi bi-star"></i> 
+                </div>
+                <p>5000 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg" alt="produit 1">
+                <h3>Sneakers</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <p>3500 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg" alt="produit 1">
+                <h3>Jeans</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-half" aria-hidden="true"></i>
+                </div>
+                <p>4250 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg" alt="produit 1">
+                <h3>Polo</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-half" aria-hidden="true"></i>
+                    <i class="bi bi-star"></i> 
+                </div>
+                <p>5050 fcfa</p>
+            </div>
+        </div>
+        <div class="pagination">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+   </section>
+  
+   <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Télechargez notre application!</h3>
+                <p>Télechargez notre application sur téléphone Android et IOS.</p>
+                <div class="app">
+                    <img src="images/play-store.png" alt="Android app">
+                    <img src="images/app-store.png" alt="IOS app">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <div class="wl">
+                    <img src="images/logo-white.png" alt="white">
+                </div>
+                <p>Notre objectif est de rendre durablement le plaisir et les bienfaits du sport accessible à tous!</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="">Coupons</a></li>
+                    <li><a href="">Article de blog</a></li>
+                    <li><a href="">Politique de retour</a></li>
+                    <li><a href="">Rejoignez l'affiliation</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Suivez Nous</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Tik Tok</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; Bproo_dev 2022</p>
+    </div>
+   </footer>
+
+   <script>
+    var menuItems = document.getElementById('menuItems');
+
+    menuItems.style.maxHeight = '0px';
+    menuItems.style.padding   = '0px';
+
+    function toogleButton(){
+        if(menuItems.style.maxHeight == '0px'){
+            menuItems.style.maxHeight = '200px';
+            menuItems.style.padding   = '15px'; 
+        }else{
+            menuItems.style.maxHeight = '0px';
+            menuItems.style.padding   = '0px';
+        }      
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

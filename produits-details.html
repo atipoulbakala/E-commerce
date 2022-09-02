@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <section class="header-section">
+      <div class="container">
+        <header class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Bproo logo"></a>
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="produits-details.html">A propos</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="authentification.html">Comptes</a></li>
+                </ul>
+                <a href="panier.html"><img src="images/cart.png" alt="cart icon" width="26px"></a>
+                <img src="images/menu.png" alt="menu" width="26px" class="menu-icon" onclick="toogleButton()">
+            </nav>
+        </header>
+      </div>
+  </section>
+
+  <section class="detail-produit">
+    <div class="container">
+        <div class="row">
+           <div class="col-2">
+            <img src="images/gallery-1.jpg" alt="gallery" id="imgProduct" class="produit-img" width="100%">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/gallery-1.jpg" alt="" class="img-thumbnail">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-2.jpg" alt="" class="img-thumbnail">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-3.jpg" alt="" class="img-thumbnail">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-4.jpg" alt="" class="img-thumbnail">
+                </div>
+            </div>
+           </div>
+           <div class="col-2">
+               <p>
+                Home/
+                <span>details produit</span>
+               </p>
+
+               <h1>T-shirt</h1>
+
+               <h3>5000 FCFA</h3>
+
+               <select>
+                <option value="">Selectionnez une taille</option>
+                <option value="">XXL</option>
+                <option value="">XL</option>
+                <option value="">L</option>
+                <option value="">S</option>
+               </select>
+
+               <input type="number" value="1">
+
+               <a href="panier.html">Ajoutez au panier</a>
+
+               <h3>Details produit</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus molestias harum, consequatur fuga facilis quis! Corrupti ex et quae deleniti!</p>
+           </div>
+        </div>
+    </div>
+  </section>
+   <!--meilleurs produits-->
+   <section class="featured-products">
+    <div class="container">
+        <div class="row row-2">
+            <h2 class="titre-produits">Tout nos produits</h2>
+            <p>Voir plus</p>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg" alt="produit 1">
+                <h3>T-shirt</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star" aria-hidden="true"></i>
+                    <i class="bi bi-star"></i> 
+                </div>
+                <p>5000 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" alt="produit 1">
+                <h3>Sneakers</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <p>3500 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg" alt="produit 1">
+                <h3>Jeans</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-half" aria-hidden="true"></i>
+                </div>
+                <p>4250 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="produit 1">
+                <h3>Polo</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-half" aria-hidden="true"></i>
+                    <i class="bi bi-star"></i> 
+                </div>
+                <p>5050 fcfa</p>
+            </div>
+        </div>
+    </div>
+   </section>
+  
+   <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Télechargez notre application!</h3>
+                <p>Télechargez notre application sur téléphone Android et IOS.</p>
+                <div class="app">
+                    <img src="images/play-store.png" alt="Android app">
+                    <img src="images/app-store.png" alt="IOS app">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <div class="wl">
+                    <img src="images/logo-white.png" alt="white">
+                </div>
+                <p>Notre objectif est de rendre durablement le plaisir et les bienfaits du sport accessible à tous!</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="">Coupons</a></li>
+                    <li><a href="">Article de blog</a></li>
+                    <li><a href="">Politique de retour</a></li>
+                    <li><a href="">Rejoignez l'affiliation</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Suivez Nous</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Tik Tok</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; Bproo_dev 2022</p>
+    </div>
+   </footer>
+
+   <script>
+    var menuItems = document.getElementById('menuItems');
+
+    menuItems.style.maxHeight = '0px';
+    menuItems.style.padding   = '0px';
+
+    function toogleButton(){
+        if(menuItems.style.maxHeight == '0px'){
+            menuItems.style.maxHeight = '200px';
+            menuItems.style.padding   = '15px'; 
+        }else{
+            menuItems.style.maxHeight = '0px';
+            menuItems.style.padding   = '0px';
+        }      
+    }
+</script>
+<!-- script pour click des produits -->
+
+<script>
+     var imgProduct = document.getElementById('imgProduct');
+     var imgThumbnails = document.getElementsByClassName('img-thumbnail');
+
+     imgThumbnails[0].onclick = function(){
+        imgProduct.src = imgThumbnails[0].src;
+     }
+     imgThumbnails[1].onclick = function(){
+        imgProduct.src = imgThumbnails[1].src;
+     }
+     imgThumbnails[2].onclick = function(){
+        imgProduct.src = imgThumbnails[2].src;
+     }
+     imgThumbnails[3].onclick = function(){
+        imgProduct.src = imgThumbnails[3].src;
+     }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

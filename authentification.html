@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <section class="header-section">
+      <div class="container">
+        <header class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Bproo logo"></a>
+            </div>
+            <nav>
+                <ul id="meuItems">
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="produits-details.html">A propos</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="authentification.html">Comptes</a></li>
+                </ul>
+                <a href="panier.html"><img src="images/cart.png" alt="cart icon" width="26px"></a>
+                <img src="images/menu.png" alt="menu" width="26px" class="menu-icon" onclick="toogleButton()">
+            </nav>
+        </header>
+        <div class="row">
+            <div class="col-2">
+                <img src="images/image1.png" alt="landing image">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-button">
+                        <span onclick="connexionFonction()">Connexion</span>
+                        <span onclick="inscriptionFonction()">Inscription</span>
+                        <hr id="Indicateur">
+                    </div>
+                    <form id="Connexion">
+                        <input type="email" placeholder="votre email">
+                        <input type="password" placeholder="votre mot de passe">
+                        <input type="submit" value="connexion" class="form-btn">
+                        <a href="">Mot de passe oublié</a>
+                    </form>
+                    <form id="Inscription">
+                        <input type="text" placeholder="votre nom">
+                        <input type="email" placeholder="votre email">
+                        <input type="password" placeholder="votre mot de passe">
+                        <input type="submit" value="Inscription" class="form-btn">
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+  </section>
+ 
+   <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Télechargez notre application!</h3>
+                <p>Télechargez notre application sur téléphone Android et IOS.</p>
+                <div class="app">
+                    <img src="images/play-store.png" alt="Android app">
+                    <img src="images/app-store.png" alt="IOS app">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <div class="wl">
+                    <img src="images/logo-white.png" alt="white">
+                </div>
+                <p>Notre objectif est de rendre durablement le plaisir et les bienfaits du sport accessible à tous!</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="">Coupons</a></li>
+                    <li><a href="">Article de blog</a></li>
+                    <li><a href="">Politique de retour</a></li>
+                    <li><a href="">Rejoignez l'affiliation</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Suivez Nous</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Tik Tok</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; Bproo_dev 2022</p>
+    </div>
+   </footer>
+
+   <script>
+    var menuItems = document.getElementById('menuItems');
+
+    menuItems.style.maxHeight = '0px';
+    menuItems.style.padding   = '0px';
+
+    function toogleButton(){
+        if(menuItems.style.maxHeight == '0px'){
+            menuItems.style.maxHeight = '200px';
+            menuItems.style.padding   = '15px'; 
+        }else{
+            menuItems.style.maxHeight = '0px';
+            menuItems.style.padding   = '0px';
+        }      
+    }
+</script>
+<!-- script code pour le form toogle -->
+<script>
+    var connexion = document.getElementById('Connexion');
+    var inscription = document.getElementById('Inscription');
+    var indicateur = document.getElementById('Indicateur');
+
+
+    function connexionFonction(){
+        connexion.style.transform = 'translateX(300px)';
+        inscription.style.transform = 'translateX(300px)';
+        indicateur.style.transform = 'translateX(0px)';
+    }
+
+
+    function inscriptionFonction(){
+        connexion.style.transform = 'translateX(0px)';
+        inscription.style.transform = 'translateX(0px)';
+        indicateur.style.transform = 'translateX(111px)';
+    }
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
